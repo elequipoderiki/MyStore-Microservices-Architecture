@@ -24,7 +24,7 @@ namespace AspnetRunBasics.Services
 
         public async Task<BasketModel> GetBasket(string userName)
         {
-            var response = await _client.GetAsync("/Basket/{userName}");
+            var response = await _client.GetAsync($"/Basket/{userName}");
             return await response.ReadContentAs<BasketModel>();
         }
 

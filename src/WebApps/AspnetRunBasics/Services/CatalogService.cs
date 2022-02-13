@@ -35,7 +35,7 @@ namespace AspnetRunBasics.Services
 
         public async Task<CatalogModel> GetCatalog(string id)
         {
-            var response = await _client.GetAsync("/Catalog/{id}");
+            var response = await _client.GetAsync($"/Catalog/{id}");
             return await response.ReadContentAs<CatalogModel>();
 
         }

@@ -9,9 +9,9 @@ namespace AspnetRunBasics
 {
     public class OrderModel : PageModel
     {
-        private readonly OrderService _orderService;
+        private readonly IOrderService _orderService;
 
-        public OrderModel(OrderService orderRepository)
+        public OrderModel(IOrderService orderRepository)
         {
             _orderService = orderRepository;
         }

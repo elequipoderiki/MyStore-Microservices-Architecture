@@ -7,7 +7,7 @@ namespace AspnetRunBasics
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build();
+            CreateHostBuilder(args).Build().Run();
         }
          
         public static IHostBuilder CreateHostBuilder(string[] args) =>
